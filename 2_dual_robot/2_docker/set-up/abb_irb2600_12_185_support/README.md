@@ -1,0 +1,1 @@
+# abb_irb2600_12_185_moveit_config
