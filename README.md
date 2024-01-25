@@ -10,3 +10,12 @@ Temporary Repository - Will move to GIS - Robots or CRCL - Robots later...
 - Generate URDF for the irb2600 and moveit package
 - Generate dockers for both planning and planning & sending
 - Figure out that robot has been changed for its workobject and it is connected to WAN at the moment
+
+## 25.01.2024
+### To-Do
+- [] 
+- []
+### Log
+- Tried to connect via the service port but was initially unsuccessful, need to go to Control Panel -> Settings -> Network -> Use No IP Address to use service port
+- `wobj_0` and `ob_RRC_Act` both have same frame where Z is ~1375.997 mm
+- Calibrated with needle tooltip and camera
