@@ -3,7 +3,8 @@ Temporary Repository - Will move to GIS - Robots or CRCL - Robots later...
 
 ## 08.02.2024
 ### To-Do
-- [ ] discuss about tools and grippers
+- [ ] Send two robots to the same point to see the precision
+- [ ] Discuss about tools and grippers
 
 ### Log
 - Found 8 pts for each robot with two-camera calibration tool, then used points to find matrix transform values
