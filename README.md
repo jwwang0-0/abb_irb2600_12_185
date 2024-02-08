@@ -1,10 +1,20 @@
 # abb_irb2600_12_185
 Temporary Repository - Will move to GIS - Robots or CRCL - Robots later...
 
+## 25.01.2024
+### To-Do
+- [] measure 8 points in the space to caculate the world axis transformation
+
+### Log
+- Tried to connect via the service port but was initially unsuccessful, need to go to Control Panel -> Settings -> Network -> Use No IP Address to use service port
+- `wobj_0` and `ob_RRC_Act` both have same frame where Z is ~1375.997 mm, fixed. Go to robotstudio -> configuration -> motion -> robot to  change the base frame back
+- Calibrated with needle tooltip
+<img src="3_documentation/ip.jpg" alt="image" style="zoom:50%;" /> 
+
 ## 11.01.2024
 ### To-Do
 - [X] Prepare for two robots calibration URDF - JW
-- [X] Open the mideum size robot controller, change the workobject through robotstudio back to the base (Or Change the URDF) - Eric
+- [X] Open the medium size robot controller, change the workobject through robotstudio back to the base (Or Change the URDF) - Eric
 - [X] Prepare for the calibration tools - Eleni
 ### Finished
 - Generate URDF for the irb2600 and moveit package
