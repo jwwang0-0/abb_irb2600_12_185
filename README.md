@@ -33,4 +33,4 @@ Temporary Repository - Will move to GIS - Robots or CRCL - Robots later...
 ## 08.02.2024
 ### Log
 - Found 8 pts for each robot with two-camera calibration tool, then used points to find matrix transform values
-- Setup URDF, see `080224_URDF_Setup` documentation
+- Setup URDF, see `080224_URDF_Setup` documentation. For video, see [OneDrive](https://epflch.sharepoint.com/:f:/s/ENAC-CRCL/ElpBoSZGSYlPmsWXrB_2PycBLaWoKR6H7JITN1QzPBjTHQ?e=mwP6jv)
