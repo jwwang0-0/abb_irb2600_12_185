@@ -2,30 +2,11 @@
 version: '2'
 services:
 
-  moveit-service-setup-assistant:
-    image: gramaziokohler/ros-noetic-moveit
-    container_name: moveit-service-setup-assistant
-    environment:
-      - ROS_HOSTNAME=moveit-service-setup-assistant
-      - ROS_MASTER_URI=http://ros-core:11311
-      # GUI: To forward the GUI to an external X11 server (eg. XMing), uncomment the following line
-      - DISPLAY=host.docker.internal:0.0
-    depends_on:
-      - ros-core
-    volumes:
-      - ./abb_irb2600_12_185_dual_support:/root/catkin_ws/src/abb_irb2600_12_185_dual_support
-      - ./abb_irb2600_12_185_dual_config:/root/catkin_ws/src/abb_irb2600_12_185_dual_config
-    command:
-      - roslaunch
-      - --wait
-      - moveit_setup_assistant
-      - setup_assistant.launch
-
-  # moveit-service:
-  #   image: gramaziokohler/ros-noetic-dfab:22.05
-  #   container_name: moveit-service
+  # moveit-service-setup-assistant:
+  #   image: gramaziokohler/ros-noetic-moveit
+  #   container_name: moveit-service-setup-assistant
   #   environment:
-  #     - ROS_HOSTNAME=moveit-service
+  #     - ROS_HOSTNAME=moveit-service-setup-assistant
   #     - ROS_MASTER_URI=http://ros-core:11311
   #     # GUI: To forward the GUI to an external X11 server (eg. XMing), uncomment the following line
   #     - DISPLAY=host.docker.internal:0.0
@@ -37,11 +18,30 @@ services:
   #   command:
   #     - roslaunch
   #     - --wait
-  #     - abb_irb2600_12_185_dual_config
-  #     - demo.launch
-  #     # To launch the RVIZ GUI, change the following to true
-  #     - use_rviz:=false
-  #     - pipeline:=ompl
+  #     - moveit_setup_assistant
+  #     - setup_assistant.launch
+
+  moveit-service:
+    image: gramaziokohler/ros-noetic-dfab:22.05
+    container_name: moveit-service
+    environment:
+      - ROS_HOSTNAME=moveit-service
+      - ROS_MASTER_URI=http://ros-core:11311
+      # GUI: To forward the GUI to an external X11 server (eg. XMing), uncomment the following line
+      - DISPLAY=host.docker.internal:0.0
+    depends_on:
+      - ros-core
+    volumes:
+      - ./abb_irb2600_12_185_dual_support:/root/catkin_ws/src/abb_irb2600_12_185_dual_support
+      - ./abb_irb2600_12_185_dual_config:/root/catkin_ws/src/abb_irb2600_12_185_dual_config
+    command:
+      - roslaunch
+      - --wait
+      - abb_irb2600_12_185_dual_config
+      - demo.launch
+      # To launch the RVIZ GUI, change the following to true
+      - use_rviz:=false
+      - pipeline:=ompl
 
 
   ros-core:

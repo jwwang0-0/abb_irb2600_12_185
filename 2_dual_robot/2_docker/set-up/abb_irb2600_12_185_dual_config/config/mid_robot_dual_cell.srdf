@@ -62,6 +62,8 @@
     <disable_collisions link1="robotA_link_2" link2="robotB_link_1" reason="Never"/>
     <disable_collisions link1="robotA_link_2" link2="robotB_link_2" reason="Never"/>
     <disable_collisions link1="robotA_link_2" link2="robotB_link_3" reason="Never"/>
+    <disable_collisions link1="robotA_link_2" link2="robotB_link_4" reason="Never"/>
+    <disable_collisions link1="robotA_link_2" link2="robotB_link_5" reason="Never"/>
     <disable_collisions link1="robotA_link_2" link2="robotB_link_6" reason="Never"/>
     <disable_collisions link1="robotA_link_3" link2="robotA_link_4" reason="Adjacent"/>
     <disable_collisions link1="robotA_link_3" link2="robotA_link_5" reason="Never"/>
@@ -70,6 +72,8 @@
     <disable_collisions link1="robotA_link_3" link2="robotB_link_1" reason="Never"/>
     <disable_collisions link1="robotA_link_3" link2="robotB_link_2" reason="Never"/>
     <disable_collisions link1="robotA_link_3" link2="robotB_link_3" reason="Never"/>
+    <disable_collisions link1="robotA_link_3" link2="robotB_link_4" reason="Never"/>
+    <disable_collisions link1="robotA_link_3" link2="robotB_link_5" reason="Never"/>
     <disable_collisions link1="robotA_link_3" link2="robotB_link_6" reason="Never"/>
     <disable_collisions link1="robotA_link_4" link2="robotA_link_5" reason="Adjacent"/>
     <disable_collisions link1="robotA_link_4" link2="robotA_link_6" reason="Never"/>
@@ -88,6 +92,7 @@
     <disable_collisions link1="robotA_link_6" link2="robotB_base_link" reason="Never"/>
     <disable_collisions link1="robotA_link_6" link2="robotB_link_1" reason="Never"/>
     <disable_collisions link1="robotA_link_6" link2="robotB_link_2" reason="Never"/>
+    <disable_collisions link1="robotA_link_6" link2="robotB_link_3" reason="Never"/>
     <disable_collisions link1="robotA_link_6" link2="robotB_link_4" reason="Never"/>
     <disable_collisions link1="robotA_link_6" link2="robotB_link_5" reason="Never"/>
     <disable_collisions link1="robotA_link_6" link2="robotB_link_6" reason="Never"/>

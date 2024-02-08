@@ -457,7 +457,7 @@
     <joint name="robotB_joint" type="fixed">
         <parent link="world" />
         <child link="robotB_base_link" />
-        <origin rpy="-0 0 -3.1415926" xyz="2.5 0 0" />
+        <origin rpy="0.00041166767187156717 0.005882192447675842 -3.129394251246824" xyz="3.070587026068542 0.019064029578026894 0.015637209791168258" />
     </joint>
     <transmission name="trans_robotA_joint_1">
         <type>transmission_interface/SimpleTransmission</type>
